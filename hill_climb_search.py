@@ -53,10 +53,7 @@ def hill_climb_search(initial_state):
         
         best_neighbor_idx = neighbor_costs.index(min_neighbor_cost)
         best_neighbor_state, best_neighbor_action = neighbors[best_neighbor_idx]
-        
-        # if min_neighbor_cost < best_cost:
-        #     best_state = best_neighbor_state
-        #     best_cost = min_neighbor_cost
+
         
         current_state = best_neighbor_state
         current_cost = min_neighbor_cost
